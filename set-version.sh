@@ -2,7 +2,6 @@
 
 NEW_VERSION=$1
 
-
 # Convert NPM version to semver compatible if needed
 if [[ $NEW_VERSION =~ [0-9]+\.[0-9]+\.[0-9]+\.[a-z] ]]; then
   NEW_NPM_VERSION=$(echo $NEW_VERSION | awk -F '.' '{ print $1"."$2"."$3"+"$4 }')
