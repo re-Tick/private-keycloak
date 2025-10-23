@@ -1,4 +1,3 @@
-
 root = true
 
 [{*.js,*.tsx,*.adoc}]
