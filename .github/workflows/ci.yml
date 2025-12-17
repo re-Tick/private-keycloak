@@ -26,10 +26,9 @@ permissions:
   contents: read
 
 jobs:
-
   conditional:
     name: Check conditional workflows and jobs
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       ci: ${{ steps.conditional.outputs.ci }}
       ci-quarkus: ${{ steps.conditional.outputs.ci-quarkus }}
